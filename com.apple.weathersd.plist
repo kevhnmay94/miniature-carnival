@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
         <key>Label</key>
-        <string>com.apple.weatherd</string>
+        <string>com.apple.weathersd</string>
         <key>Program</key>
-        <string>/usr/local/bin/weatherd</string>
+        <string>/usr/local/bin/weathersd</string>
         <key>ProgramArguments</key>
         <array>
-                <string>/usr/local/bin/weatherd</string>
+                <string>/usr/local/bin/weathersd</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
