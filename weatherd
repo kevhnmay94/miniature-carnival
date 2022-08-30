@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-sleep 30
+sleep 10
 
 if sw_vers -productVersion | grep -E '^13.{1,}$'
 then
