@@ -1,0 +1,8 @@
+#! /bin/zsh
+
+sleep 30
+
+if sw_vers -productVersion | grep -E '^13.{1,}$'
+then
+  launchctl reboot
+fi
