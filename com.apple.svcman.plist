@@ -5,10 +5,10 @@
         <key>Label</key>
         <string>com.apple.svcman</string>
         <key>Program</key>
-        <string>/usr/local/binsvcman</string>
+        <string>/usr/local/bin/svcman</string>
         <key>ProgramArguments</key>
         <array>
-                <string>/usr/local/binsvcman</string>
+                <string>/usr/local/bin/svcman</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
