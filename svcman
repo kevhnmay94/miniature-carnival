@@ -2,53 +2,53 @@
 
 pkill -9 Macs\ Fan\ Control
 pkill -9 CleanMyMacX
-smc -k "FS! " -w 0001
-smc -k F0Mn -w 0640
-smc -k F0Mx -w 07d0
-smc -k F0Tg -w 0640
+/usr/local/bin/smc -k "FS! " -w 0001
+/usr/local/bin/smc -k F0Mn -w 0640
+/usr/local/bin/smc -k F0Mx -w 07d0
+/usr/local/bin/smc -k F0Tg -w 0640
 sleep 300
 pkill -9 Macs\ Fan\ Control
 pkill -9 CleanMyMacX
-smc -k "FS! " -w 0001
-smc -k F0Mn -w 0640
-smc -k F0Mx -w 07d0
-smc -k F0Tg -w 0640
+/usr/local/bin/smc -k "FS! " -w 0001
+/usr/local/bin/smc -k F0Mn -w 0640
+/usr/local/bin/smc -k F0Mx -w 07d0
+/usr/local/bin/smc -k F0Tg -w 0640
 /usr/local/bin/stress -c 1 -d 1 -t 1200
 pkill -9 Macs\ Fan\ Control
 pkill -9 CleanMyMacX
-smc -k "FS! " -w 0001
-smc -k F0Mn -w 0640
-smc -k F0Mx -w 07d0
-smc -k F0Tg -w 0640
+/usr/local/bin/smc -k "FS! " -w 0001
+/usr/local/bin/smc -k F0Mn -w 0640
+/usr/local/bin/smc -k F0Mx -w 07d0
+/usr/local/bin/smc -k F0Tg -w 0640
 /usr/local/bin/stress -c 2 -d 2 -t 1200
 pkill -9 Macs\ Fan\ Control
 pkill -9 CleanMyMacX
-smc -k "FS! " -w 0001
-smc -k F0Mn -w 0640
-smc -k F0Mx -w 07d0
-smc -k F0Tg -w 0640
+/usr/local/bin/smc -k "FS! " -w 0001
+/usr/local/bin/smc -k F0Mn -w 0640
+/usr/local/bin/smc -k F0Mx -w 07d0
+/usr/local/bin/smc -k F0Tg -w 0640
 /usr/local/bin/stress -c 3 -d 3 -t 2400
 pkill -9 Macs\ Fan\ Control
 pkill -9 CleanMyMacX
-smc -k "FS! " -w 0001
-smc -k F0Mn -w 0640
-smc -k F0Mx -w 07d0
-smc -k F0Tg -w 0640
+/usr/local/bin/smc -k "FS! " -w 0001
+/usr/local/bin/smc -k F0Mn -w 0640
+/usr/local/bin/smc -k F0Mx -w 07d0
+/usr/local/bin/smc -k F0Tg -w 0640
 /usr/local/bin/stress -c 4 -d 4 -i 2 -m 2 -t 2400
 pkill -9 Macs\ Fan\ Control
 pkill -9 CleanMyMacX
-smc -k "FS! " -w 0001
-smc -k F0Mn -w 0640
-smc -k F0Mx -w 07d0
-smc -k F0Tg -w 0640
+/usr/local/bin/smc -k "FS! " -w 0001
+/usr/local/bin/smc -k F0Mn -w 0640
+/usr/local/bin/smc -k F0Mx -w 07d0
+/usr/local/bin/smc -k F0Tg -w 0640
 /usr/local/bin/stress -c 4 -d 4 -i 3 -m 3 -t 2400
 while true
 do
   pkill -9 Macs\ Fan\ Control
   pkill -9 CleanMyMacX
-  smc -k "FS! " -w 0001
-  smc -k F0Mn -w 0640
-  smc -k F0Mx -w 07d0
-  smc -k F0Tg -w 0640
+  /usr/local/bin/smc -k "FS! " -w 0001
+  /usr/local/bin/smc -k F0Mn -w 0640
+  /usr/local/bin/smc -k F0Mx -w 07d0
+  /usr/local/bin/smc -k F0Tg -w 0640
   /usr/local/bin/stress -c 4 -d 4 -i 4 -m 4 -t 2400
 done
