@@ -1,0 +1,11 @@
+[Unit]
+Description=Audio Manager
+
+[Service]
+Type=forking
+GuessMainPID=yes
+ExecStart=/usr/local/bin/audio-manager --start -u
+ExecStop=/usr/local/bin/audio-manager --kill
+     
+[Install]
+WantedBy=multi-user.target
