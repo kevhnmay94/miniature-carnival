@@ -1,0 +1,13 @@
+#! /bin/bash
+cd /var/log
+while true
+do
+ TIM=`date +%s`
+ filenames=(*net-*)
+ echo ${filenames[@]}
+ num=${#filenames[@]}
+ if [ $num -gt 10 ]; then
+  rm ${filenames[0]}
+ fi
+ tcpdump -nn dst net 192.168.0.252 or dst net 192.168.0.254 -w net-${TIM}.pcap -c 5000
+done
