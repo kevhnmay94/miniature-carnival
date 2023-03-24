@@ -23,7 +23,7 @@ if [[ $? -eq 0 || "$LASTMAC" != "$MYMAC" ]]; then
     if [ "$IPSET" != "$IPNOW" ]; then
       cp /etc/network/interfaces.bak /etc/network/interfaces
       sed -i -e "s/$IPSET/$IPNOW/g" /etc/network/interfaces
-      ip addr del 192.168.0.212/24 dev $INTERFACE
+      ip addr del $IPSET/24 dev $INTERFACE
       ip addr add $IPNOW/24 dev $INTERFACE
       ip link set dev $INTERFACE down
       ip link set dev $INTERFACE address $MYMAC
